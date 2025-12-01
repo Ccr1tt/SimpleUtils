@@ -1,0 +1,39 @@
+name: SimpleUtils
+version: '0.5-DEV'
+main: org.crit.simpleUtils.SimpleUtils
+api-version: '1.21'
+
+commands:
+  dupe:
+    description: Dupes the item in your hand!
+    aliases:
+      - dp
+      - dup
+      - upe
+    permission-message: You lack the permission to run this!
+    usage: /<command> <optional amount>
+    permission: dupe
+
+  fly:
+    description: Lets you fly around the world! Use it again to stop flying!
+    permission: flight
+    usage: /<command> (TOGGLE)
+
+  dupeblacklist:
+    description: Adds a player to the dupe blacklist!
+    permission: dupe_blacklistUSE
+    usage: /<command> <Player> (TOGGLE THEIR STATUS)
+    permission-message: You lack the permissions to run this!
+
+  vanish:
+    description: Vanishes you or other players
+    permission: vanish
+    usage: /<command> <Player> (toggle)
+    permission-message: You suck ash!
+
+  enchant:
+    description: Enchants the item in your hand!
+    permission: enchant
+    usage: /<command> <enchant> <level>
+    permission-message: Enchants stuff
+

@@ -1,0 +1,40 @@
+# SIMPLE UTILITY V-TESTING
+
+# IF YOU WANT COLORS USE "§" FOR THEM!
+# PERMISSIONS
+# /Dupe (dupe)
+# /fly (flight)
+# /dupeblacklist (dupe_blacklistUSE)
+
+# BASICS CONFIGURATION
+prefix: '§c§l[SU] §f'  # Make sure you have a space twinskies!
+join_message: '§cWelcome {PLAYER} to the server!'
+public_join_message: '§cWelcome {PLAYER} to our server!'
+leave_message: '{PLAYER} has left the building.'
+server_name: 'SimpleUtility'
+no_permission: 'You do not have permission to execute this command!'
+not_a_player: 'Only a player can execute this command!'
+
+# Vanish
+vanished: 'You are now no longer visible to other players!'
+unvanished: 'You are now visible to other players!'
+
+# Fly
+enabled: true
+toggle_true_fly: 'You have enabled flight!'
+toggle_false_fly: 'You have disabled flight!'
+disable_in_combat: true
+
+# DUPE CONFIGURATION
+dupe_permission: 0
+max_dupe: 120
+dupe_sound_enabled: false
+BLACKLIST: [GRASS_BLOCK]
+BLACKLISTED_FROM_DUPING: 'You’ve been blacklisted, and can no longer dupe!'
+# Use {AMOUNT} and {ITEM_NAME} !
+DUPED_ITEM: 'You’ve duped x{AMOUNT} {ITEM_NAME}!'
+RUN_AGAIN_DUPE: 'Run this command again to unblacklist them!'
+Blacklisted_Players_dupe: []
+
+# ENCHANT COMMAND
+enchanted_item: 'Added {ENCHANT} to {ITEM_NAME}!'
