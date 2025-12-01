@@ -33,7 +33,6 @@ public class DupeCommand implements CommandExecutor {
         }
         final Player player = (Player) commandSender;
 
-        // Access the plugin config
         FileConfiguration config = plugin.getConfig();
         PlayerInventory inventory = player.getInventory();
         String Prefix = config.getString("prefix");
