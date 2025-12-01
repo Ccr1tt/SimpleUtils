@@ -1,10 +1,15 @@
-# SIMPLE UTILITY V-TESTING
-
-# IF YOU WANT COLORS USE "§" FOR THEM!
-# PERMISSIONS
-# /Dupe (dupe)
-# /fly (flight)
-# /dupeblacklist (dupe_blacklistUSE)
+# SIMPLE UTILITY BY CCR1TT
+#$$$$$$\  $$\                         $$\           $$\   $$\   $$\     $$\ $$\
+#  $$  __$$\ \__|                        $$ |          $$ |  $$ |  $$ |    \__|$$ |
+#  $$ /  \__|$$\ $$$$$$\$$$$\   $$$$$$\  $$ | $$$$$$\  $$ |  $$ |$$$$$$\   $$\ $$ |
+#  \$$$$$$\  $$ |$$  _$$  _$$\ $$  __$$\ $$ |$$  __$$\ $$ |  $$ |\_$$  _|  $$ |$$ |
+#  \____$$\ $$ |$$ / $$ / $$ |$$ /  $$ |$$ |$$$$$$$$ |$$ |  $$ |  $$ |    $$ |$$ |
+#  $$\   $$ |$$ |$$ | $$ | $$ |$$ |  $$ |$$ |$$   ____|$$ |  $$ |  $$ |$$\ $$ |$$ |
+#  \$$$$$$  |$$ |$$ | $$ | $$ |$$$$$$$  |$$ |\$$$$$$$\ \$$$$$$  |  \$$$$  |$$ |$$ |
+#  \______/ \__|\__| \__| \__|$$  ____/ \__| \_______| \______/    \____/ \__|\__|
+#  $$ |           My first minecraft plugin.
+#  $$ |             don't expect much twin.
+#  \__|
 
 # BASICS CONFIGURATION
 prefix: '§c§l[SU] §f'  # Make sure you have a space twinskies!
@@ -20,7 +25,6 @@ vanished: 'You are now no longer visible to other players!'
 unvanished: 'You are now visible to other players!'
 
 # Fly
-enabled: true
 toggle_true_fly: 'You have enabled flight!'
 toggle_false_fly: 'You have disabled flight!'
 disable_in_combat: true
