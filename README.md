@@ -29,3 +29,7 @@ Im too busy to be bothered on discord, Please open a github issue wrather than t
 
 
 <img width="423" height="59" alt="image" src="https://github.com/user-attachments/assets/17c00a48-4be8-4493-9591-2d6524c72974" />
+
+# Can i fork 🍴
+
+I do not care if you use this at all or publish it, Just dont publish the exact same thing add something else, I highly doubt whatever the fuck i made is even coded properly so you can figure it out yourself 😂
