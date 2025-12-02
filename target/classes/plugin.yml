@@ -1,7 +1,11 @@
 name: SimpleUtils
-version: '0.5-DEV'
+version: '1.0.1-X'
 main: org.crit.simpleUtils.SimpleUtils
 api-version: '1.21'
+description: 'A utility plugin meant to eliminate the need of multiple plugins, Designed to have the basics features servers may need.'
+authors:
+  - 'Your mom'
+  - 'ft. Ccr1tt'
 
 commands:
   dupe:
@@ -36,4 +40,11 @@ commands:
     permission: enchant_vanish_SIMPLEUTIL
     usage: /<command> <enchant> <level>
     permission-message: Enchants stuff
+
+  simpleutils:
+    description: Information on the server & the plugin!
+    usage: /<command> <req>
+    permission-message: You cant do this brochanco
+
+
 

@@ -55,6 +55,8 @@ public final class SimpleUtils extends JavaPlugin implements Listener {
         getCommand("dupeblacklist").setExecutor(new DupeBlacklist(this));
         getCommand("vanish").setExecutor(new VanishCommand(this));
         getCommand("enchant").setExecutor(new EnchantCommand(this));
+        getCommand("simpleutils").setExecutor(new SimpleUtilsCommand(this));
+
         Plugin[] plugins = Bukkit.getPluginManager().getPlugins();
         Plugin essentials = getServer().getPluginManager().getPlugin("Essentials");
 
@@ -65,6 +67,7 @@ public final class SimpleUtils extends JavaPlugin implements Listener {
                 getLogger().warning("""
                         EssentialsX Detected disabled the following commands: 
                             - /fly
+                       
                         """);
                 fly.setExecutor((sender, cmd, label, args) -> {
                     if (args.length > 0) {
@@ -94,7 +97,7 @@ public final class SimpleUtils extends JavaPlugin implements Listener {
         event.setJoinMessage(
                 getConfig().getString(
                         "public_join_message",
-                        "[+] {PLAYER").replace("{PLAYER}", player.getName())
+                        "[+] {PLAYER}").replace("{PLAYER}", player.getName())
         );
     }
 
