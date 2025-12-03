@@ -37,6 +37,7 @@ BLACKLIST: [GRASS_BLOCK]
 BLACKLISTED_FROM_DUPING: 'You’ve been blacklisted, and can no longer dupe!'
 # Use {AMOUNT} and {ITEM_NAME} !
 DUPED_ITEM: 'You’ve duped x{AMOUNT} {ITEM_NAME}!'
+dupebanned_lore: '§cDUPEBANNED!'
 RUN_AGAIN_DUPE: 'Run this command again to unblacklist them!'
 Blacklisted_Players_dupe: []
 

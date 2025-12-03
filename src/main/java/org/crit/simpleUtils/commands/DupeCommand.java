@@ -12,6 +12,7 @@ import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
@@ -37,6 +38,14 @@ public class DupeCommand implements CommandExecutor {
         PlayerInventory inventory = player.getInventory();
         String Prefix = config.getString("prefix");
         ItemStack mainHand = inventory.getItemInMainHand();
+        List<String> lore = mainHand.getLore();
+
+        for (String value : lore) {
+            if (value == config.getString("dupebanned_lore", "DUPEBANNED")) {
+                player.sendMessage(Prefix + "This item is not dupeable!");
+                return true;
+            }
+        }
 
 
         List<String> blacklist = config.getStringList("BLACKLIST");
