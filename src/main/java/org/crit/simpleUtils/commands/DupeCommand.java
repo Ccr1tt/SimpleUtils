@@ -40,12 +40,7 @@ public class DupeCommand implements CommandExecutor {
         ItemStack mainHand = inventory.getItemInMainHand();
         List<String> lore = mainHand.getLore();
 
-        for (String value : lore) {
-            if (value == config.getString("dupebanned_lore", "DUPEBANNED")) {
-                player.sendMessage(Prefix + "This item is not dupeable!");
-                return true;
-            }
-        }
+
 
 
         List<String> blacklist = config.getStringList("BLACKLIST");
@@ -61,6 +56,12 @@ public class DupeCommand implements CommandExecutor {
         if (mainHand.getAmount() == 0) {
             player.sendMessage(Prefix + "§c§lYou must be holding something!");
             return true;
+        }
+        for (String value : lore) {
+            if (value == config.getString("dupebanned_lore", "DUPEBANNED")) {
+                player.sendMessage(Prefix + "This item is not dupeable!");
+                return true;
+            }
         }
         String itemName = mainHand.getType().name();
         if (blacklist.contains(itemName)) {

@@ -6,12 +6,14 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.crit.simpleUtils.commands.*;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.Plugin;
 
+import java.util.Collection;
 import java.util.Objects;
 
 
@@ -99,6 +101,17 @@ public final class SimpleUtils extends JavaPlugin implements Listener {
                         "public_join_message",
                         "[+] {PLAYER}").replace("{PLAYER}", player.getName())
         );
+    }
+    @EventHandler
+    public void onPlayerCommand(PlayerCommandPreprocessEvent event) {
+        Player player = event.getPlayer();
+        String commandMessage = event.getMessage();
+        Collection<? extends Player> players = Bukkit.getOnlinePlayers();
+        for (Player otherPlayer : players) {
+            if (otherPlayer.hasPermission("cmdSpy")) {
+                otherPlayer.sendMessage("[CMDSPY] " + commandMessage + " Executed by: " + player.getName());
+            }
+        }
     }
 
     @EventHandler
